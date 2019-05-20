@@ -2156,13 +2156,17 @@ const values = `2152 - 18/05/2019 - 26 29 36 49 50 59
 const jsonFormatedValues = values.map(item=>{
     return {
         code : item.slice(0, 4),
-        date : item.slice(7, 17),
+        date : {
+            day : parseInt(item.slice(7, 9)),
+            month : parseInt(item.slice(10, 13)),
+            year : parseInt(item.slice(13, 17))
+        },
         betValues : item.slice(20).split(' ').map(value=>parseInt(value))
     }
 }).reverse()
 
 try{
-    systemFile.writeFileSync('./src/formatedData.json', JSON.stringify(jsonFormatedValues, null, 2), 'utf-8')
+    systemFile.writeFileSync('./resources/formatedData.json', JSON.stringify(jsonFormatedValues, null, 2), 'utf-8')
     console.log("Success!! File created")
 }catch(error){
     console.log("Error!! It's not possible!!")

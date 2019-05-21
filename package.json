@@ -10,7 +10,9 @@
   "devDependencies": {},
   "scripts": {
     "dev": "tsc -w",
-    "start": "node . && node ./src/build/mainApp.js"
+    "build": "rmdir /s /Q \"./src/build\" && tsc",
+    "start": "node . && node ./src/build/index.js",
+    "make-run": "npm run build && npm run start"
   },
   "repository": {
     "type": "git",

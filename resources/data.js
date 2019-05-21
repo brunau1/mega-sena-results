@@ -2155,7 +2155,7 @@ const values = `2152 - 18/05/2019 - 26 29 36 49 50 59
 
 const jsonFormatedValues = values.map(item=>{
     return {
-        code : item.slice(0, 4),
+        code : parseInt(item.slice(0, 4)),
         date : {
             day : parseInt(item.slice(7, 9)),
             month : parseInt(item.slice(10, 13)),

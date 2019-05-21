@@ -1,5 +1,5 @@
 export default interface BetNumbers {
     code: number
-    betNumbers : number[]
+    betValues : number[]
     contAppeared : number
 }

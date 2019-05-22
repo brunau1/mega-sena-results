@@ -9,3 +9,5 @@ for (let i = 0; i < 60; i++) {
         dataStructure[i].contAppeared.appearPerCase[j] = 0
     }
 }
+
+export default dataStructure

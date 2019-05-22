@@ -1,6 +1,6 @@
 import BetResultsInterface from "../models/BetResultsInterface"
 import ItemData from "../models/ItemDataInterface"
-import { dataValues } from "./ItemDataController"
+import dataValues from "./ItemDataController"
 
 const setMegaSenaResults = ( betResults : BetResultsInterface[] ) : void => {
     betResults = dataValues.map((item : ItemData) : BetResultsInterface => {

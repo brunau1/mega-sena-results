@@ -1,4 +1,4 @@
-const systemFile = require('fs')
+/*const systemFile = require('fs')
 
 const values = `` // insert the data here - consult https://asloterias.com.br/lista-de-resultados-da-mega-sena
 
@@ -19,4 +19,5 @@ try{
     console.log("Success!! File created")
 }catch(error){
     console.log("Error!! It's not possible!!")
-}
+}*/
+console.log("The data has already been converted!!")

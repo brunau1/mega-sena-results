@@ -1,4 +1,4 @@
-import DataStructureInterface from "../models/DataStructureInterface"
+import DataStructureInterface from "../interfaces/DataStructureInterface"
 
 const dataStructure: DataStructureInterface[] = []
 

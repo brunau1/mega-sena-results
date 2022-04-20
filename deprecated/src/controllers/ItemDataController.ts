@@ -1,4 +1,4 @@
-import ItemData from "../models/ItemDataInterface"
+import ItemData from "../interfaces/ItemDataInterface"
 
 const dataValues : ItemData[] = require('../../resources/formatedData.json')
 
